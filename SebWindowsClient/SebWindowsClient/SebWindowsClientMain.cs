@@ -367,7 +367,7 @@ namespace SebWindowsClient
             if (SEBClientInfo.IsNewOS)
             {
                 sessionCreateNewDesktop = (Boolean)SEBClientInfo.getSebSetting(SEBSettings.KeyCreateNewDesktop)[SEBSettings.KeyCreateNewDesktop];
-                if (sessionCreateNewDesktop)
+                if (sessionCreateNewDesktop = false)
                 {
                     SEBClientInfo.OriginalDesktop = SEBDesktopController.GetCurrent();
                     SEBDesktopController OriginalInput = SEBDesktopController.OpenInputDesktop();
